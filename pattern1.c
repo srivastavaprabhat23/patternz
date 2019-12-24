@@ -17,18 +17,12 @@ int main(void) {
 	    printf("\n");
 	}
 	for(i=1;i<=n;i++){
-	    if(i==1){
-	        for(j=1;j<=n;j++){
-    	       printf("*");
-    	    }
-	    }else{
-	        for(j=1;j<=n;j++){
-    	        if(j==1 || j==n){
-    	           printf("*"); 
-    	        }else{
-    	            printf(" ");
-    	        }
-    	    }
+        for(j=1;j<=n;j++){
+	        if(j==1 || j==n || i==1){
+	           printf("*"); 
+	        }else{
+	            printf(" ");
+	        }
 	    }
 	    printf("\n");
 	}
